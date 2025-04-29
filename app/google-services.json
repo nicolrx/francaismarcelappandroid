@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "358562300948",
+    "project_id": "francais-avec-marcel",
+    "storage_bucket": "francais-avec-marcel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358562300948:android:32c76da9acbce4b3e85301",
+        "android_client_info": {
+          "package_name": "com.example.francaisavecmarcel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrFtLjd0sPVndSNFh7rzEnQkhAvfMR4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
