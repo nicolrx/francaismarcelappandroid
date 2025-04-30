@@ -2,15 +2,14 @@ package com.example.francaisavecmarcel.fragments
 
 import android.Manifest
 import android.os.Build
+import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.messaging.FirebaseMessaging
 import com.example.francaisavecmarcel.viewmodels.NotificationTokenViewModel
-import com.example.francaisavecmarcel.activities.MainActivity
 import dev.hotwire.navigation.destinations.HotwireDestinationDeepLink
 import dev.hotwire.navigation.fragments.HotwireWebFragment
 import kotlinx.coroutines.launch
-import com.example.francaisavecmarcel.activities.baseURL
 
 @HotwireDestinationDeepLink("hotwire://fragment/web")
 class WebFragment : HotwireWebFragment() {
@@ -24,30 +23,7 @@ class WebFragment : HotwireWebFragment() {
 
     override fun onResume() {
         super.onResume()
-        
-        // Get the current location from arguments
-        val location = arguments?.getString("location") ?: ""
-        
-        // Extract the path from the location
-        val currentPath = if (location.startsWith(baseURL)) {
-            location.substring(baseURL.length)
-        } else {
-            "unknown"
-        }
-        
-        // Check if path matches any of our target paths
-        val shouldHideNavBar = when {
-            currentPath.startsWith("/users/") -> true
-            currentPath.startsWith("/quizzes/") -> true
-            currentPath == "/onboarding" -> true
-            currentPath.startsWith("/dictees/") -> true
-            else -> false
-        }
-        
-        val mainActivity = activity as? MainActivity
-        if (mainActivity != null) {
-            mainActivity.setBottomNavigationVisibility(!shouldHideNavBar)
-        }
+        toolbarForNavigation()?.visibility = View.GONE
     }
 
     fun requestNotificationPermission() {
