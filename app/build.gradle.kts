@@ -7,21 +7,34 @@ plugins {
 }
 
 android {
-    namespace = "com.example.francaisavecmarcel"
+    namespace = "com.llf.francaisavecmarcel"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.francaisavecmarcel"
+        applicationId = "com.llf.francaisavecmarcel"
         minSdk = 28
         targetSdk = 35
-        versionCode = 1
+        versionCode = 3
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            buildConfigField(
+                type ="String",
+                name = "BASE_URL",
+                value = "\"http://10.0.2.2:3000\""
+            )
+        }
+
         release {
+            buildConfigField(
+                type ="String",
+                name = "BASE_URL",
+                value = "\"https://app.francaisavecmarcel.fr\""
+            )
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -39,6 +52,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

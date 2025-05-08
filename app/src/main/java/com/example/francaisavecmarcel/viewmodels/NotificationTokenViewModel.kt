@@ -1,7 +1,7 @@
-package com.example.francaisavecmarcel.viewmodels
+package com.llf.francaisavecmarcel.viewmodels
 
 import android.webkit.CookieManager
-import com.example.francaisavecmarcel.activities.baseURL
+import com.llf.francaisavecmarcel.activities.baseURL
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject

@@ -1,11 +1,11 @@
-package com.example.francaisavecmarcel
+package com.llf.francaisavecmarcel
 
 import android.app.Application
 import com.google.firebase.FirebaseApp
-import com.example.francaisavecmarcel.activities.baseURL
-import com.example.francaisavecmarcel.components.ButtonComponent
-import com.example.francaisavecmarcel.components.NotificationTokenComponent
-import com.example.francaisavecmarcel.fragments.WebFragment
+import com.llf.francaisavecmarcel.activities.baseURL
+import com.llf.francaisavecmarcel.components.ButtonComponent
+import com.llf.francaisavecmarcel.components.NotificationTokenComponent
+import com.llf.francaisavecmarcel.fragments.WebFragment
 import dev.hotwire.core.bridge.BridgeComponentFactory
 import dev.hotwire.core.bridge.KotlinXJsonConverter
 import dev.hotwire.core.config.Hotwire

@@ -1,4 +1,4 @@
-package com.example.francaisavecmarcel.components
+package com.llf.francaisavecmarcel.components
 
 import androidx.compose.material3.Text
 import androidx.compose.ui.platform.ComposeView

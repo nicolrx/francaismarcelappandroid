@@ -1,6 +1,6 @@
-package com.example.francaisavecmarcel.components
+package com.llf.francaisavecmarcel.components
 
-import com.example.francaisavecmarcel.fragments.WebFragment
+import com.llf.francaisavecmarcel.fragments.WebFragment
 import dev.hotwire.core.bridge.BridgeComponent
 import dev.hotwire.core.bridge.BridgeDelegate
 import dev.hotwire.core.bridge.Message

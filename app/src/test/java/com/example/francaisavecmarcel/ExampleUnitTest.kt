@@ -1,4 +1,4 @@
-package com.example.francaisavecmarcel
+package com.llf.francaisavecmarcel
 
 import org.junit.Test
 

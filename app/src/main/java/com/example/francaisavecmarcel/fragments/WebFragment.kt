@@ -1,4 +1,4 @@
-package com.example.francaisavecmarcel.fragments
+package com.llf.francaisavecmarcel.fragments
 
 import android.Manifest
 import android.os.Build
@@ -6,7 +6,7 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.messaging.FirebaseMessaging
-import com.example.francaisavecmarcel.viewmodels.NotificationTokenViewModel
+import com.llf.francaisavecmarcel.viewmodels.NotificationTokenViewModel
 import dev.hotwire.navigation.destinations.HotwireDestinationDeepLink
 import dev.hotwire.navigation.fragments.HotwireWebFragment
 import kotlinx.coroutines.launch
