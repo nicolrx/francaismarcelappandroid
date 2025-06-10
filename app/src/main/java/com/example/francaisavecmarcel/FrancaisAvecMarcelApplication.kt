@@ -5,6 +5,7 @@ import com.google.firebase.FirebaseApp
 import com.llf.francaisavecmarcel.activities.baseURL
 import com.llf.francaisavecmarcel.components.ButtonComponent
 import com.llf.francaisavecmarcel.components.NotificationTokenComponent
+import com.llf.francaisavecmarcel.components.ReviewPromptComponent
 import com.llf.francaisavecmarcel.fragments.WebFragment
 import dev.hotwire.core.bridge.BridgeComponentFactory
 import dev.hotwire.core.bridge.KotlinXJsonConverter
@@ -36,6 +37,9 @@ class FrancaisAvecMarcelApplication : Application() {
                 "notification-token",
                 ::NotificationTokenComponent
             )
+        )
+        Hotwire.registerBridgeComponents(
+            BridgeComponentFactory("review-prompt", ::ReviewPromptComponent)
         )
 
         Hotwire.config.jsonConverter = KotlinXJsonConverter()

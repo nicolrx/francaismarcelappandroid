@@ -14,7 +14,7 @@ android {
         applicationId = "com.llf.francaisavecmarcel"
         minSdk = 28
         targetSdk = 35
-        versionCode = 7
+        versionCode = 10
         versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -75,4 +75,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.android.play:core:1.10.3")
+    implementation("com.google.android.play:core-ktx:1.8.1")
 }
